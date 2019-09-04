@@ -1,0 +1,25 @@
+[package]
+name = "craft"
+version = "0.1.0"
+authors = ["TobiasGSmollett <landofscala@gmail.com>"]
+edition = "2018"
+license = "MIT"
+description = "Modular, light web framework for Rust"
+readme = "README.md"
+repository = "https://github.com/TobiasGSmollett/craft"
+keywords = ["web", "http", "routing", "router"]
+categories = ["asynchronous", "web-programming::http-server"]
+
+[badges]
+travis-ci = { repository = "TobiasGSmollett/craft" }
+codecov = { repository = "TobiasGSmollett/craft" }
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+hyper = { version = "0.12", default-features = false }
+lazy_static = "1.4.0"
+patricia_router = "0.1.0"
+futures01 = "0.1.28"
+futures-preview = { version = "0.3.0-alpha.17", features = ["io-compat"] }
+runtime = "0.3.0-alpha.6"
